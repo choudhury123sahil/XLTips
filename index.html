@@ -77,9 +77,29 @@
 
   }
 
+  .btn-check:checked+.btn-warning,
+  .btn-check:active+.btn-warning,
+  .btn-warning:active,
+  .btn-warning.active,
+  .show>.btn-warning.dropdown-toggle {
+    color: #FFFEFE;
+    background-color: #2e7d32 !important;
+    border-color: #2e7d32 !important;
+  }
+
+
+
+
+
+  .btn-warning:hover {
+    color: #FFFEFE;
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+  }
+
   .btn-primary {
     color: #FFFEFE;
-    background-color: #207245 !important;
+    background-color: #217346 !important;
     border-color: #207245 !important;
     padding: 10px 71px !important;
     font-size: 20px !important;
@@ -87,20 +107,20 @@
 
   .btn-primary:hover {
     color: #FFFEFE;
-    background-color: #207245 !important;
-    border-color: #207245 !important;
+    background-color: #2e7d32 !important;
+    border-color: #2e7d32 !important;
   }
 
   .btn-primary:active {
     color: #FFFEFE;
-    background-color: #207245 !important;
-    border-color: #207245 !important;
+    background-color: #2e7d32 !important;
+    border-color: #2e7d32 !important;
   }
 
   .btn-primary:focus {
     color: #FFFEFE;
-    background-color: #207245 !important;
-    border-color: #207245 !important;
+    background-color: #2e7d32 !important;
+    border-color: #2e7d32 !important;
   }
 
   .form-control {
@@ -130,6 +150,10 @@
   .iconstyle {
     margin: 22px;
 
+  }
+
+  .ms-n3 {
+    margin-left: 0rem !important;
   }
 </style>
 
@@ -170,8 +194,9 @@
             <div class="text-center text-md-start">
               <!-- <a class="btn btn-warning me-3 btn-lg" href="#!" role="button">Get
                 started</a> -->
-              <div class=""><a class="btn btn-warning" href="#" role="button" style="margin-top: 0px;"><span
-                    class="fas fa-play me-2"></span>Watch the video</a></div>
+              <div class=""><a class="btn btn-warning" href="https://www.youtube.com/" role="button" data-bs-toggle="modal"
+                data-bs-target="#popupVideo"
+                  style="margin-top: 0px;"><span class="fas fa-play me-2"></span>Watch the video</a></div>
               <!-- <a class="btn btn-link text-warning fw-medium" href="#!" role="button" data-bs-toggle="modal"
                 data-bs-target="#popupVideo" style="
                 padding: 0px; font-size: 21px;"><span class="fas fa-play me-2"></span>Watch the video </a> -->
@@ -207,13 +232,13 @@
             <h4 class="mb-3">Excel Formulas and Functions</h4>
             <p class="mb-0 fw-medium text-secondary">Learn how to create a complex formula in Excel.</p>
           </div>
-          <div class="col-lg-3 col-sm-6 mb-2 newcolclass"> <img class="mb-3 ms-n3" src="assets/img/category/icon3.png"
+          <div class="col-lg-3 col-sm-6 mb-2 newcolclass"> <img class="mb-3 ms-n3" src="assets/img/category/icon4.png"
               width="75" alt="Feature" />
             <h4 class="mb-3">Excel Advance + Accounting (Reporting & Analysis)</h4>
             <p class="mb-0 fw-medium text-secondary">Learn the advance and accounting based formula, reporting &
               Analysis.</p>
           </div>
-          <div class="col-lg-3 col-sm-6 mb-2 newcolclass"> <img class="mb-3 ms-n3" src="assets/img/category/icon4.png"
+          <div class="col-lg-3 col-sm-6 mb-2 newcolclass"> <img class="mb-3 ms-n3" src="assets/img/category/icon3.png"
               width="75" alt="Feature" />
             <h4 class="mb-3">Excel Automation (VBA & Macro Programming)</h4>
             <p class="mb-0 fw-medium text-secondary">Learn the automation in excel using VBA & Macros.</p>
@@ -412,7 +437,8 @@
               <div class="card-body">
                 <div class="text-center p-3">
                   <h5 class="card-title" style="font-size:30px; margin-bottom: 30px;">Business Plan / Monthly</h5>
-                  <h5 class="text-secondary " style="text-align: left; font-size: 20px; font-weight: 500;">Business/Company</h5>
+                  <h5 class="text-secondary " style="text-align: left; font-size: 20px; font-weight: 500;">
+                    Business/Company</h5>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item" style="text-align: left;"><svg xmlns="http://www.w3.org/2000/svg"
                         width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
@@ -444,16 +470,19 @@
                         <path
                           d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
                       </svg> Excel Tutorials & Video</li>
-                      <li class="list-group-item" style="text-align: left;"><svg xmlns="http://www.w3.org/2000/svg"
+                    <li class="list-group-item" style="text-align: left;"><svg xmlns="http://www.w3.org/2000/svg"
                         width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                         <path
                           d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                      </svg>  Accounting Solutions & more</li>
+                      </svg> Accounting Solutions & more</li>
                   </ul>
                   <h5 class="text-secondary "
-                    style="text-align: left; font-size: 20px; font-weight: 600; margin-top: 30px;">Customize Product Development </h5>
-                  
-                  <p style="text-align: left !important; margin-top: 20px; font-size: 16px;">We develop automation tool in excel, this will  help you in office task with automation, you can contact us to develop your customize tool
+                    style="text-align: left; font-size: 20px; font-weight: 600; margin-top: 30px;">Customize Product
+                    Development </h5>
+
+                  <p style="text-align: left !important; margin-top: 20px; font-size: 16px;">We develop automation tool
+                    in excel, this will help you in office task with automation, you can contact us to develop your
+                    customize tool
                   </p>
                   <div class="text-center"><a class="btn btn-warning" href="#contact" role="button"
                       style="margin-top: 23px;">Contact Us</a></div>
@@ -647,7 +676,8 @@
         <p class="mb-6 text-secondary">500+ automation projects and customize business solution. </p>
         <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="card" style="padding: 0px; margin: 0px;"><img class="card-img-top" src="assets/img/marketing/marketing01.png" alt="" />
+            <div class="card" style="padding: 0px; margin: 0px;"><img class="card-img-top"
+                src="assets/img/marketing/marketing01.png" alt="" />
               <div class="card-body ps-0">
                 <!-- <p class="text-secondary">By <a class="fw-bold text-decoration-none me-1" href="#">Abdullah</a>|<span
                     class="ms-1">03 March 2019</span></p> -->
@@ -656,7 +686,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" style="padding: 0px; margin: 0px;"><img class="card-img-top" src="assets/img/marketing/marketing02.png" alt="" />
+            <div class="card" style="padding: 0px; margin: 0px;"><img class="card-img-top"
+                src="assets/img/marketing/marketing02.png" alt="" />
               <div class="card-body ps-0">
                 <!-- <p class="text-secondary">By <a class="fw-bold text-decoration-none me-1" href="#">Abdullah</a>|<span
                     class="ms-1">03 March 2019</span></p> -->
@@ -665,7 +696,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card" style="padding: 0px; margin: 0px;"><img class="card-img-top" src="assets/img/marketing/marketing03.png" alt="" />
+            <div class="card" style="padding: 0px; margin: 0px;"><img class="card-img-top"
+                src="assets/img/marketing/marketing03.png" alt="" />
               <div class="card-body ps-0">
                 <!-- <p class="text-secondary">By <a class="fw-bold text-decoration-none me-1" href="#">Abdullah</a>|<span
                     class="ms-1">03 March 2019</span></p> -->
@@ -693,10 +725,10 @@
               src="assets/img/logo.png" width="184" alt="" style="margin-left: -12px;" />
             <div>
 
-              <a href="https://www.linkedin.com/company/xltips/"><img class="mb-3 icon-class"
+              <a href="https://www.linkedin.com/company/xltips/" target="_blank" ><img class="mb-3 icon-class"
                   src="assets/img/linkedin.png" width="35" alt="Feature" /></a><a
-                href="https://www.youtube.com/@xltips-in"><img class="mb-3 icon-class" src="assets/img/youtube.png"
-                  width="35" alt="Feature" /></a><a href="https://www.instagram.com/xltips.in/"><img
+                href="https://www.youtube.com/@xltips-in" target="_blank"><img class="mb-3 icon-class" src="assets/img/youtube.png"
+                  width="35" alt="Feature" /></a><a href="https://www.instagram.com/xltips.in/" target="_blank" ><img
                   class="mb-3 icon-class" src="assets/img/instagram.png" width="35" alt="Feature" /></a>
 
 
@@ -721,10 +753,9 @@
                   and Functions
                 </a></li>
               <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#product">Excel Advance +
-                  Accounting (Reporting & Analysis)
+                  Accounting 
                 </a></li>
-              <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#product">Excel Advance +
-                  Accounting (Reporting & Analysis)
+              <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#product">Excel Automation
                 </a>
               </li>
             </ul>
@@ -773,7 +804,7 @@
   <!-- ===============================================-->
 
 
-  <!-- <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
+  <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <iframe class="rounded" style="width:100%;height:500px;" src="https://www.youtube.com/embed/_lhdhL4UDIo"
@@ -782,7 +813,7 @@
           allowfullscreen></iframe>
       </div>
     </div>
-  </div> -->
+  </div>
 
 
   <!-- ===============================================-->
